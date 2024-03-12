@@ -1,0 +1,179 @@
+{
+  "data": {
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Generated schema for Root",
+    "type": "object",
+    "properties": {
+      "results": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "details": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "psaGroupId": {
+                  "type": "number"
+                },
+                "type": {
+                  "type": "string"
+                },
+                "groupOfGroupConfiguration": {
+                  "type": "object",
+                  "properties": {
+                    "memberGroups": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "id": {
+                            "type": "string"
+                          },
+                          "memberGroupId": {
+                            "type": "string"
+                          },
+                          "memberGroup": {
+                            "type": "string"
+                          }
+                        },
+                        "required": ["id", "memberGroupId", "memberGroup"]
+                      }
+                    },
+                    "identityGroupId": {
+                      "type": "string"
+                    },
+                    "id": {
+                      "type": "string"
+                    }
+                  },
+                  "required": ["memberGroups", "identityGroupId", "id"]
+                },
+                "ldapFilter": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "systemId": {
+                      "type": "number"
+                    },
+                    "groupDn": {
+                      "type": "string"
+                    },
+                    "accountIdAttribute": {
+                      "type": "string"
+                    },
+                    "groupMemberAttribute": {
+                      "type": "string"
+                    },
+                    "memberUserAttribute": {
+                      "type": "string"
+                    },
+                    "searchScope": {
+                      "type": "string"
+                    },
+                    "identityGroupId": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "systemId",
+                    "groupDn",
+                    "accountIdAttribute",
+                    "groupMemberAttribute",
+                    "memberUserAttribute",
+                    "searchScope",
+                    "identityGroupId"
+                  ]
+                },
+                "dynamicFilter": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "filter": {
+                      "type": "string"
+                    },
+                    "identityGroupId": {
+                      "type": "string"
+                    }
+                  },
+                  "required": ["id", "filter", "identityGroupId"]
+                },
+                "accessPeriod": {
+                  "type": "object",
+                  "properties": {
+                    "startDate": {
+                      "type": "string"
+                    },
+                    "endDate": {
+                      "type": "string"
+                    }
+                  },
+                  "required": ["startDate", "endDate"]
+                },
+                "description": {
+                  "type": "string"
+                },
+                "enabled": {
+                  "type": "boolean"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string"
+                },
+                "systemDefault": {
+                  "type": "boolean"
+                }
+              },
+              "required": [
+                "id",
+                "psaGroupId",
+                "type",
+                "groupOfGroupConfiguration",
+                "ldapFilter",
+                "dynamicFilter",
+                "accessPeriod",
+                "description",
+                "enabled",
+                "name",
+                "status",
+                "systemDefault"
+              ]
+            },
+            "id": {
+              "type": "string"
+            }
+          },
+          "required": ["details", "id"]
+        }
+      },
+      "pageNumber": {
+        "type": "number"
+      },
+      "pageSize": {
+        "type": "number"
+      },
+      "totalPages": {
+        "type": "number"
+      },
+      "totalRecords": {
+        "type": "number"
+      }
+    },
+    "required": [
+      "results",
+      "pageNumber",
+      "pageSize",
+      "totalPages",
+      "totalRecords"
+    ]
+  }
+}

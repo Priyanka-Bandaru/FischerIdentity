@@ -1,0 +1,10 @@
+{
+  "auth_endPoint": "auth/realms/qa/protocol/openid-connect/token",
+  "get_users_endPoint": "api/v1/runtime/users",
+  "get_group_endPoint": "api/v1/runtime/users/-166572326424771073270094315200361996947/groups",
+  "header_form_data": {
+    "grant_type": "client_credentials",
+    "client_id": "identity-api-server-tes",
+    "client_secret": "327f9a9c-f959-4d27-bd60-c4ded5c49e50"
+  }
+}
